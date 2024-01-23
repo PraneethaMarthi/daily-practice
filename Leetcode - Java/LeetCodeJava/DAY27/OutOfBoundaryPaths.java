@@ -7,7 +7,7 @@ public class OutOfBoundaryPaths {
     static int[] DIR = new int[]{0, 1, 0, -1, 0};
     public static int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {
         memo = new Integer[m][n][maxMove+1];
-        this.m = m; this.n = n;
+        //this.m = m; this.n = n;
         return dp(startRow, startColumn, maxMove);
     }
     static int dp(int r, int c, int maxMove) {
